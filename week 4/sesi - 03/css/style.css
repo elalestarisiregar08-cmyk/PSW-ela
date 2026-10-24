@@ -1,0 +1,37 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+:root { --brand: #175cd3; --space: 1rem;
+ --surface: rgb(225, 176, 247); --ink: #243244; }
+
+body {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--ink);
+    background-image: url('aesthetic.jpg');
+ background-repeat: no-repeat;
+ background-attachment: fixed;  
+ background-size: cover;
+    
+}
+header{
+    padding: 1rem; margin-bottom: 1rem;
+    background: #e1e4ec; border: 1px solid #7da2eb;
+}
+
+main { width: 90%; max-width: 60rem; margin-inline: auto; }
+
+h1 { h1 { font-size: 2rem; line-height: 1.2; } }
+button { padding: .75rem 1rem; color: rgb(115, 16, 16); background: #324bea; border: 0;}
+
+.card { padding: var(--space); background: var(--surface); }
+.notice { color: #7da2eb; }
+
+p { max-width: 65ch; }
+
+button:focus-visible, input:focus-visible {
+ outline: 3px solid var(--brand); outline-offset: 3px;
+}
+

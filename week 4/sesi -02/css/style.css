@@ -1,0 +1,22 @@
+body {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #f5b2b2;
+    background: #28b2e8;
+}
+header, main {
+    padding: 1rem; margin-bottom: 1rem;
+    background: #e1e4ec; border: 1px solid #7da2eb;
+}
+h1 { color: #293d7a; }
+button { padding: .75rem 1rem; color: rgb(115, 16, 16); background: #324bea; border: 0;}
+
+form.card { padding: 1rem; background: rgb(178, 44, 188); }
+.notice { color: #7da2eb; }
+
+.card p { color: purple; }
+.notice { color: rgb(137, 235, 141); }
+.card {width: 240px; padding: 16px; border: 2px solid #445; margin: 12px; }

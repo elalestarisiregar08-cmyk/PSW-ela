@@ -1,0 +1,107 @@
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --brand: #175cd3;
+    --space: 1rem;
+    --surface: rgb(255, 229, 242);
+    --ink: #243244;
+}
+
+body {
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--ink);
+    background-image: url('aesthetic.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #fff0f5;
+    border: 1px solid #7da2eb;
+}
+
+
+main {
+    width: 90%;
+    max-width: 60rem;
+    margin-inline: auto;
+    padding: 1rem;
+    background: #fff0f5;
+    border: 1px solid #7da2eb;
+    border-radius: 12px;
+}
+
+
+h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+button {
+    padding: .75rem 1rem;
+    color: rgb(115, 16, 16);
+    background: #324bea;
+    border: 0;
+}
+
+.notice {
+    color: #7da2eb;
+}
+
+
+.card {
+    padding: var(--space);
+    background: var(--surface);
+    border: 1px solid rgb(213, 111, 179);
+    min-width: 0;
+}
+
+.card h2 {
+    overflow-wrap: anywhere;
+}
+
+p {
+    max-width: 65ch;
+}
+
+button:focus-visible,
+input:focus-visible {
+    outline: 3px solid var(--brand);
+    outline-offset: 3px;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+}
+
+
+.catalog {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.catalog { grid-template-columns:
+ repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
+
+ 
+.card { display: flex; flex-direction: column; gap: .5rem; }
+.card h2, .card p { margin: 0; }
+.card a { align-self: start; }
+
+/* urutan konten tetap ditentukan HTML */
+.card { padding: var(--space-2, 1rem); }
