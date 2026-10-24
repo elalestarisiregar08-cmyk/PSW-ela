@@ -60,7 +60,7 @@
 
             <label for="prodi">Program studi (wajib)</label>
             <select id="prodi" name="prodi" required>
-                <option value="">Pilih program studi</option>
+                <option value=""disabled selected>Pilih program studi</option>
                 <option value="trpl">D4 TRPL</option>
                 <option value="ti">D3 Teknologi Informasi</option>
             </select>
@@ -80,6 +80,7 @@
                 <label for="topik_aksesibilitas">Aksesibilitas</label>
             </fieldset>
             <label for="catatan">Catatan (opsional)</label>
+            <small>Maksimal 300 karakter.</small>
             <textarea id="catatan" name="catatan" rows="4" maxlength="300"></textarea>
             <button type="submit">Daftar</button>
         </form>

@@ -1,0 +1,17 @@
+Komentar Teman :
+
+Komentar 1 — Label pilihan program studi
+
+Pada pilihan program studi, teks Pilih program studi sudah digunakan sebagai opsi awal, tetapi sebaiknya tambahkan atribut disabled agar pengguna tidak dapat memilihnya sebagai pilihan yang valid.
+bagian <option value="">Pilih program studi</option>   diganti menjadi <option value="" disabled selected>Pilih program studi</option> agar Pengguna wajib memilih program studi yang benar, bukan membiarkan opsi petunjuk sebagai pilihan.
+
+komentar 2 - Batas panjang catatan
+
+Kolom catatan sudah memiliki maxlength="300", tetapi belum ada informasi yang menjelaskan batas maksimal karakter kepada pengguna. Sebaiknya tambahkan petunjuk agar pengguna tahu bahwa catatan dibatasi hingga 300 karakter.
+bagian <label for="catatan">Catatan (opsional)</label>
+<textarea id="catatan" name="catatan"
+          rows="4" maxlength="300"></textarea> menjadi 
+          <label for="catatan">Catatan (opsional)</label>
+<small>Maksimal 300 karakter.</small>
+<textarea id="catatan" name="catatan"
+          rows="4" maxlength="300"></textarea>
